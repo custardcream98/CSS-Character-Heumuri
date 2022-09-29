@@ -1,5 +1,101 @@
 /* animation */
 
+@keyframes hide {
+  10% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+}
+
+@keyframes eye-blink {
+  64% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 0;
+  }
+}
+@keyframes eye-blink-hide {
+  62% {
+    height: 30px;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  65% {
+    height: 5px;
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  72% {
+    height: 5px;
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  73% {
+    height: 30px;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes mouth-circled {
+  20% {
+    top: 70px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+  }
+
+  100% {
+    top: 70px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes mouth-squzeeze {
+  0% {
+    top: 70px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+  }
+
+  20% {
+    top: 70px;
+    left: 30px;
+    width: 40px;
+    height: 25px;
+  }
+
+  90% {
+    top: 70px;
+    left: 30px;
+    width: 40px;
+    height: 25px;
+  }
+}
+
 @keyframes pen {
   0% {
     opacity: 0;

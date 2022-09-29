@@ -52,10 +52,17 @@
   background-color: var(--brown);
 }
 
+.eyes-closed {
+  opacity: 0;
+}
+.eyes-closed .eyes-closed-line {
+  background-color: var(--brown);
+  border-radius: 3px;
+}
+
 .mouth {
   border-radius: 50%;
   background-color: var(--pink);
-  transform: rotate(-10deg);
 }
 .mouth::after {
   border-radius: 50% 50% 0 0;
@@ -68,7 +75,6 @@
   border-radius: 50%;
   border: 20px solid var(--gray);
   background-color: var(--darkgray);
-  transform: translateX(-50%) rotate(50deg);
 }
 
 .pen .handle {
