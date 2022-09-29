@@ -1,0 +1,12 @@
+/* reset */
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #cdeafa;
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
+}

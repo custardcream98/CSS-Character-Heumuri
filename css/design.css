@@ -1,0 +1,80 @@
+/* setting */
+:root {
+  --white: #ffffff;
+  --yellow: #fee567;
+  /* --thi: #ffce2b;
+        --fou: #fff1b3; */
+  --brown: rgb(108, 17, 17);
+  --pink: rgb(246, 119, 140);
+  --lightgray: rgb(184, 184, 184);
+  --darkgray: rgb(60, 60, 60);
+  --gray: rgb(78, 78, 78);
+}
+
+/* Heumuri 흐물이 */
+.heumuri .body * {
+  background-color: var(--white);
+}
+
+.heumuri .body .left {
+  border-left: 3px solid var(--lightgray);
+}
+.heumuri .body .right {
+  border-right: 3px solid var(--lightgray);
+}
+.heumuri .body .upper {
+  border-top: 3px solid var(--lightgray);
+}
+.heumuri .body .downner {
+  border-bottom: 3px solid var(--lightgray);
+}
+
+.heumuri .body .upper.left {
+  border-radius: 100% 0 0 0;
+}
+.heumuri .body .upper.right {
+  border-radius: 0 100% 0 0;
+}
+.heumuri .body .downner.left {
+  border-radius: 0 0 0 100%;
+}
+.heumuri .body .downner.right {
+  border-radius: 0 0 100% 0;
+}
+
+.face {
+  border-radius: 50% 70% 50% 60%;
+  background-color: var(--yellow);
+}
+
+.eyes {
+  border-radius: 50%;
+  background-color: var(--brown);
+}
+
+.mouth {
+  border-radius: 50%;
+  background-color: var(--pink);
+  transform: rotate(-10deg);
+}
+.mouth::after {
+  border-radius: 50% 50% 0 0;
+  background-color: var(--yellow);
+}
+
+/* Pen 후라이펜 */
+.pen {
+  opacity: 0;
+  border-radius: 50%;
+  border: 20px solid var(--gray);
+  background-color: var(--darkgray);
+  transform: translateX(-50%) rotate(50deg);
+}
+
+.pen .handle {
+  background-color: var(--gray);
+}
+.pen .handle::after {
+  border-radius: 10px;
+  background-color: var(--brown);
+}

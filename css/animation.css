@@ -1,0 +1,91 @@
+/* animation */
+
+@keyframes pen {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(50deg);
+  }
+  62% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(50deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(-150%) rotate(40deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-1000px) rotate(90deg);
+  }
+}
+
+@keyframes heumuri-intro {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px) rotate(-50deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes heumuri-shake {
+  0%,
+  50%,
+  100% {
+    transform: translateX(0) translateY(80px) scale3d(1.3, 0.7, 1);
+  }
+  25% {
+    transform: translateX(-5px) translateY(80px) scale3d(1.3, 0.7, 1);
+  }
+  50% {
+    transform: translateX(5px) translateY(80px) scale3d(1.3, 0.7, 1);
+  }
+}
+
+@keyframes heumuri-squeeze {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  42% {
+    transform: translateY(50px) scale3d(0.8, 1.2, 1);
+  }
+  100% {
+    transform: translateY(80px) scale3d(1.3, 0.7, 1);
+  }
+}
+
+@keyframes heumuri-jump {
+  0% {
+    transform: translateX(0) translateY(80px) scale3d(1.3, 0.7, 1);
+  }
+
+  12.5% {
+    transform: translateY(-250px) scale3d(0.8, 1.3, 1);
+  }
+
+  100% {
+    transform: translateY(0) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes heumuri-breathe {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-50px) scale3d(0.9, 1.05, 1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale3d(1, 1, 1);
+  }
+}
