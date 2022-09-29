@@ -12,11 +12,20 @@
 }
 
 /* Heumuri 흐물이 */
-.heumuri .body * {
+.heumuri .body {
   background-color: var(--white);
+  border: 3px solid var(--lightgray);
 }
 
-.heumuri .body .left {
+/*
+  원래는 body를 네 개의 div를 이용해 표현했으나
+  README의 개선해야 할 점 부분때문에 결국
+  하나의 div로만 몸통을 표현하기로 했습니다.
+*/
+/* .heumuri .body * {
+  background-color: var(--white);
+} */
+/* .heumuri .body .left {
   border-left: 3px solid var(--lightgray);
 }
 .heumuri .body .right {
@@ -27,7 +36,7 @@
 }
 .heumuri .body .downner {
   border-bottom: 3px solid var(--lightgray);
-}
+} */
 
 .heumuri .body .upper.left {
   border-radius: 100% 0 0 0;

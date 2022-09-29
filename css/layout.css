@@ -11,15 +11,18 @@
 }
 
 .heumuri .body {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.heumuri .body * {
+  width: 400px;
+  height: 300px;
+  border-radius: 40% 60% 51% 49% / 54% 59% 41% 46%;
   animation: heumuri-breathe-deco 2s ease 4s infinite;
 }
 
-.heumuri .body .left {
+/*
+  원래는 body를 네 개의 div를 이용해 표현했으나
+  README의 개선해야 할 점 부분때문에 결국
+  하나의 div로만 몸통을 표현하기로 했습니다.
+*/
+/* .heumuri .body .left {
   width: 150px;
 }
 .heumuri .body .right {
@@ -30,7 +33,7 @@
 }
 .heumuri .body .downner {
   height: 100px;
-}
+} */
 
 .face {
   position: absolute;
