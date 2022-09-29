@@ -2,7 +2,7 @@
   position: relative;
   width: 400px;
   height: 300px;
-  margin: 100px auto;
+  margin: 200px auto;
   z-index: 20;
 
   animation: heumuri-intro 1s ease, heumuri-squeeze 0.8s ease 1s,
