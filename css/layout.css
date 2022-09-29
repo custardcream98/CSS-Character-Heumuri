@@ -68,6 +68,22 @@
   left: 45px;
 }
 
+.eye-brows {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 10px;
+}
+.eye-brows::after {
+  content: " ";
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  width: 110%;
+  height: 100%;
+}
+
 .eyes-closed-wrapper {
   position: relative;
   top: 35px;
