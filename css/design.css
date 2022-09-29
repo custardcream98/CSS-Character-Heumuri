@@ -2,8 +2,8 @@
 :root {
   --white: #ffffff;
   --yellow: #fee567;
-  /* --thi: #ffce2b;
-        --fou: #fff1b3; */
+  --deepyellow: #ffce2b;
+  --fou: #fff1b3;
   --brown: rgb(108, 17, 17);
   --pink: rgb(246, 119, 140);
   --lightgray: rgb(184, 184, 184);
@@ -43,8 +43,14 @@
 }
 
 .face {
+  overflow: hidden;
   border-radius: 50% 70% 50% 60%;
   background-color: var(--yellow);
+}
+.face::after {
+  border-radius: 50%;
+  border-right: 27px solid var(--deepyellow);
+  border-bottom: 27px solid var(--deepyellow);
 }
 
 .eyes {
