@@ -171,17 +171,17 @@
 }
 
 @keyframes heumuri-breathe {
-  0% {
-    opacity: 1;
-  }
-
   50% {
-    opacity: 1;
     transform: translateY(-50px) scale3d(0.9, 1.05, 1);
   }
 
   100% {
-    opacity: 1;
     transform: translateY(0px) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes heumuri-breathe-deco {
+  50% {
+    box-shadow: 2px 2px 30px 5px var(--white);
   }
 }
